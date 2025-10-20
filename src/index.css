@@ -8,42 +8,42 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    --background: 45 30% 96%;
-    --foreground: 25 25% 25%;
+    --background: 0 0% 0%;
+    --foreground: 45 30% 95%;
 
-    --card: 45 40% 98%;
-    --card-foreground: 25 25% 25%;
+    --card: 25 15% 12%;
+    --card-foreground: 45 30% 95%;
 
-    --popover: 45 40% 98%;
-    --popover-foreground: 25 25% 25%;
+    --popover: 25 15% 12%;
+    --popover-foreground: 45 30% 95%;
 
-    --primary: 95 45% 55%;
+    --primary: 95 50% 60%;
     --primary-foreground: 0 0% 100%;
     
-    --primary-glow: 95 50% 65%;
+    --primary-glow: 95 55% 70%;
     
-    --secondary: 200 35% 65%;
+    --secondary: 200 40% 70%;
     --secondary-foreground: 0 0% 100%;
 
-    --muted: 45 25% 90%;
-    --muted-foreground: 25 15% 50%;
+    --muted: 25 10% 20%;
+    --muted-foreground: 45 20% 65%;
 
-    --accent: 25 70% 75%;
-    --accent-foreground: 25 25% 25%;
+    --accent: 25 75% 70%;
+    --accent-foreground: 0 0% 100%;
 
     --destructive: 0 65% 65%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 45 20% 85%;
-    --input: 45 20% 88%;
-    --ring: 95 45% 55%;
+    --border: 45 20% 25%;
+    --input: 25 15% 18%;
+    --ring: 95 50% 60%;
 
     --radius: 1rem;
     
-    /* Ghibli gradients - soft and natural */
-    --gradient-primary: linear-gradient(135deg, hsl(95 45% 55%), hsl(95 50% 65%));
-    --gradient-secondary: linear-gradient(135deg, hsl(200 35% 65%), hsl(180 30% 70%));
-    --gradient-card: linear-gradient(135deg, hsl(45 40% 98% / 0.95), hsl(50 35% 96% / 0.98));
+    /* Ghibli gradients - adjusted for dark background */
+    --gradient-primary: linear-gradient(135deg, hsl(95 50% 50%), hsl(95 55% 60%));
+    --gradient-secondary: linear-gradient(135deg, hsl(200 40% 60%), hsl(180 35% 65%));
+    --gradient-card: linear-gradient(135deg, hsl(25 15% 12% / 0.95), hsl(25 12% 15% / 0.98));
     
     /* Soft glow effects */
     --glow-primary: 0 4px 12px hsl(95 45% 55% / 0.2);

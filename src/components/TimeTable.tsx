@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Calendar, Clock, MapPin, User } from "lucide-react";
 import { Card } from "./ui/card";
 import { Badge } from "./ui/badge";
+import catLogo from "@/assets/cat-logo.png";
 
 interface ClassInfo {
   name: string;
@@ -71,6 +72,15 @@ export const TimeTable = () => {
   return (
     <div className="min-h-screen bg-background p-6 md:p-8">
       <div className="max-w-7xl mx-auto space-y-8">
+        {/* Cat Logo */}
+        <div className="flex justify-center animate-fade-in">
+          <img 
+            src={catLogo} 
+            alt="Cat Logo" 
+            className="w-32 h-32 md:w-40 md:h-40 object-contain hover:scale-110 transition-transform duration-300"
+          />
+        </div>
+
         {/* Header */}
         <div className="text-center space-y-4 animate-fade-in">
           <div className="inline-block">
