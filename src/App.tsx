@@ -14,11 +14,27 @@ const App = () => (
       <Toaster />
       <Sonner />
       <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<Index />} />
-          {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
-          <Route path="*" element={<NotFound />} />
-        </Routes>
+        <div style={{ minHeight: "100vh", display: "flex", flexDirection: "column" }}>
+          {/* Main content */}
+          <div style={{ flex: 1 }}>
+            <Routes>
+              <Route path="/" element={<Index />} />
+              {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
+              <Route path="*" element={<NotFound />} />
+            </Routes>
+          </div>
+
+          {/* 👇 Footer added here */}
+          <footer style={{
+            textAlign: "center",
+            padding: "1rem 0",
+            color: "#666",
+            fontFamily: "'Poppins', sans-serif",
+            fontSize: "0.9rem"
+          }}>
+            Made with ❤️ by SG
+          </footer>
+        </div>
       </BrowserRouter>
     </TooltipProvider>
   </QueryClientProvider>
