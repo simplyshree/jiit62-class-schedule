@@ -24,8 +24,7 @@ const App = () => (
             </Routes>
           </div>
 
-          
-          {/* 👇 Footer added here */}
+         
           <footer style={{
             textAlign: "center",
             padding: "1rem 0",
