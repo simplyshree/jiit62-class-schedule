@@ -73,13 +73,14 @@ export const TimeTable = () => {
     <div className="min-h-screen bg-background p-6 md:p-8">
       <div className="max-w-7xl mx-auto space-y-8">
         {/* Cat Logo */}
-        <div className="flex justify-center animate-fade-in">
-          <img 
-            src={catLogo} 
-            alt="Cat Logo" 
-            className="w-24 h-24 md:w-40 md:h-40 object-contain hover:scale-110 transition-transform duration-300"
-          />
-        </div>
+       <div className="w-24 h-24 md:w-40 md:h-40 rounded-full border-4 border-gray-300 flex items-center justify-center overflow-hidden">
+  <img 
+    src={catLogo} 
+    alt="Cat Logo" 
+    className="w-full h-full object-contain hover:scale-110 transition-transform duration-300"
+  />
+</div>
+
 
         {/* Header */}
         <div className="text-center space-y-3 md:space-y-4 animate-fade-in">
@@ -90,7 +91,7 @@ export const TimeTable = () => {
             </Badge>
           </div>
           <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold text-primary px-4">
-            Your Class Schedule
+            My Class Schedule
           </h1>
           <p className="text-muted-foreground text-base md:text-lg px-4">
             Select a day to view your classes
