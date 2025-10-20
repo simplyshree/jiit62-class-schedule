@@ -31,13 +31,14 @@ Built with **React + TypeScript + Vite**, and deployed on **Vercel**.
 
 ## 🧑‍💻 Getting Started
 
-Contributions are welcome!
+- Fork the repo
+- Create a new branch 
+- Commit your changes  
+- Open a pull request 
+- Hosted on Vercel  
 
-Fork the repo
 
-Create a new branch
 
-Commit your changes
 
-Open a pull request 🚀
 
+This project was originally scaffolded with Lovable and later edited by me.
