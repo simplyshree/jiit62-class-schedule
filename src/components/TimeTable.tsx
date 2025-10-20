@@ -29,36 +29,47 @@ const SCHEDULE: DaySchedule[] = [
   {
     day: "Tuesday",
     classes: [
-      { name: "Algorithms", timing: "9:00 AM - 10:00 AM", venue: "Room 302", faculty: "Prof. Kenji" },
-      { name: "Mobile Development", timing: "10:15 AM - 11:15 AM", venue: "Lab 3A", faculty: "Prof. Akira" },
-      { name: "Cloud Computing", timing: "11:30 AM - 12:30 PM", venue: "Room 410", faculty: "Prof. Yuki" },
-      { name: "UI/UX Design", timing: "2:00 PM - 3:00 PM", venue: "Studio 1", faculty: "Prof. Hana" },
+      { name: "Genetics & Dev Bio", timing: "10:00 AM - 11:00 AM", venue: "Room : CS2", faculty: "Prof. Pooja" },
+      { name: "Biochemistry", timing: "11:00 AM - 12:00 PM", venue: "Room : CS2", faculty: "Prof. Monika" },
+      { name: "Environmental Science", timing: "12:00 AM - 1:00 PM", venue: "Room : FF2", faculty: "Prof. Nivedita" },
+      { name: "Biochemical Techniques Lab", timing: "2:00 PM - 4:00 PM", venue: "BCL", faculty: "Prof. Monika" },
+      { name: "Probability & Statistics", timing: "4:00 PM - 5:00 PM", venue: "G6", faculty: "Prof. Ayush Tripathi" },
     ],
   },
   {
     day: "Wednesday",
     classes: [
-      { name: "Computer Networks", timing: "9:00 AM - 10:00 AM", venue: "Room 305", faculty: "Prof. Ryu" },
-      { name: "Software Engineering", timing: "10:15 AM - 11:15 AM", venue: "Room 402", faculty: "Prof. Mai" },
-      { name: "Cyber Security", timing: "11:30 AM - 12:30 PM", venue: "Lab 4C", faculty: "Prof. Sora" },
-      { name: "Artificial Intelligence", timing: "2:00 PM - 3:00 PM", venue: "Room 203", faculty: "Prof. Ren" },
+      { name: "Thermodynamica", timing: "10:00 AM - 11:00 AM", venue: "Room : G3", faculty: "Prof. Neakanshika" },
+      { name: "Biochemistry", timing: "11:00 AM - 12:00 PM", venue: "Room : G3", faculty: "Prof. Monika" },
+      { name: "TUTE : Thermodynamics", timing: "12:00 PM - 1:00 PM", venue: "Room : TS6", faculty: "Prof. Neakanshika" },
+      { name: "TUTE : Probability & Statistics ", timing: "2:00 PM - 3:00 PM", venue: "Room : TS13", faculty: "Prof. Ayush" },
+      { name: "Probability & Statistics ", timing: "3:00 PM - 4:00 PM", venue: "Room : G3", faculty: "Prof. Ayush" },
+      { name: "ECONOMICS ", timing: "4:00 PM - 5:00 PM", venue: "Room : FF2", faculty: "Prof. Kanupriya" },
     ],
   },
   {
     day: "Thursday",
     classes: [
-      { name: "Operating Systems", timing: "9:00 AM - 10:00 AM", venue: "Room 308", faculty: "Prof. Kaito" },
-      { name: "Game Development", timing: "10:15 AM - 11:15 AM", venue: "Lab 5D", faculty: "Prof. Nami" },
-      { name: "Blockchain Tech", timing: "11:30 AM - 12:30 PM", venue: "Room 415", faculty: "Prof. Shin" },
-      { name: "DevOps", timing: "2:00 PM - 3:00 PM", venue: "Lab 2A", faculty: "Prof. Aoi" },
+      { name: "Thermodynamics & Chemical Processes Lab", timing: "9:00 AM - 11:00 AM", venue: "Lab : BT1", faculty: "Prof. Shweta , Prof. Ekta , Prof . Neakanshika" },
+      { name: "Genetics & Dev Bio", timing: "12:00 PM - 1:00 PM", venue: "Room : G7", faculty: "Prof. Pooja" },
+      { name: "TUTE: Genetics & Dev Bio", timing: "2:00 PM - 3:00 PM", venue: "Room : TS11", faculty: "Prof. Pooja" },
+      { name: "EVS", timing: "3:00 PM - 4:00 PM", venue: "Room : G3", faculty: "Prof. NIVEDITA" },
     ],
   },
   {
     day: "Friday",
     classes: [
-      { name: "Data Analytics", timing: "9:00 AM - 10:00 AM", venue: "Room 310", faculty: "Prof. Haru" },
-      { name: "Project Workshop", timing: "10:15 AM - 12:30 PM", venue: "Lab 6E", faculty: "Prof. Miku" },
-      { name: "Seminar", timing: "2:00 PM - 3:00 PM", venue: "Auditorium", faculty: "Guest Speaker" },
+      { name: "EVS", timing: "9:00 AM - 10:00 AM", venue: "Room : FF4", faculty: "Prof. NIVEDITA" },
+      { name: "ECONOMICS ", timing: "10:00 AM - 11:00 AM", venue: "Room : F8", faculty: "Prof. Kanupriya" },
+      { name: "Probability & Statistics ", timing: "11:00 PM - 12:00 PM", venue: "Room : F8", faculty: "Prof. Ayush" },
+      { name: "TUTE : ECONOMICS ", timing: "12:00 AM - 1:00 AM", venue: "Room : TS12", faculty: "Prof. Neha Singh" },
+    ],
+  },
+   {
+    day: "Saturday",
+    classes: [
+      { name: "Thermodynamica", timing: "10:00 AM - 11:00 AM", venue: "Room : G3", faculty: "Prof. Neakanshika" },
+      { name: "Biochemistry", timing: "11:00 AM - 12:00 PM", venue: "Room : G3", faculty: "Prof. Monika" },
     ],
   },
 ];
