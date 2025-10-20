@@ -20,10 +20,10 @@ const SCHEDULE: DaySchedule[] = [
   {
     day: "Monday",
     classes: [
-      { name: "Data Structures", timing: "9:00 AM - 10:00 AM", venue: "Room 301", faculty: "Prof. Tanaka" },
-      { name: "Web Development", timing: "10:15 AM - 11:15 AM", venue: "Lab 2B", faculty: "Prof. Sakura" },
-      { name: "Database Systems", timing: "11:30 AM - 12:30 PM", venue: "Room 405", faculty: "Prof. Yamamoto" },
-      { name: "Machine Learning", timing: "2:00 PM - 3:00 PM", venue: "Room 201", faculty: "Prof. Hikari" },
+      { name: "Thermodynamics", timing: "9:00 AM - 10:00 AM", venue: "Room : CR526", faculty: "Prof. Neakanshika" },
+      { name: "Biochemistry", timing: "11:00 AM - 12:00 AM", venue: "Room : G3", faculty: "Prof. Monika" },
+      { name: "TUTE - Biochemistry", timing: "12:00 PM - 1:00 PM", venue: "Room : TS 8", faculty: "Prof. Monika" },
+      { name: "GDB LAB", timing: "2:00 PM - 4:00 PM", venue: "Lab : BT 2", faculty: "Prof. Sujata" },
     ],
   },
   {
