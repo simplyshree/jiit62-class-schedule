@@ -73,8 +73,7 @@ export const TimeTable = () => {
     <div className="min-h-screen bg-background p-6 md:p-8">
       <div className="max-w-7xl mx-auto space-y-8">
         {/* Cat Logo */}
-       
-  <div className="w-24 h-24 md:w-40 md:h-40 rounded-full border-4 border-gray-300 flex items-center justify-center overflow-hidden">
+       <div className="w-24 h-24 md:w-40 md:h-40 rounded-full border-4 border-gray-300 flex items-center justify-center overflow-hidden">
   <img 
     src={catLogo} 
     alt="Cat Logo" 
