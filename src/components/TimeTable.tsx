@@ -39,7 +39,7 @@ const SCHEDULE: DaySchedule[] = [
   {
     day: "Wednesday",
     classes: [
-      { name: "Thermodynamica", timing: "10:00 AM - 11:00 AM", venue: "Room : G3", faculty: "Prof. Neakanshika" },
+      { name: "Thermodynamics", timing: "10:00 AM - 11:00 AM", venue: "Room : G3", faculty: "Prof. Neakanshika" },
       { name: "Biochemistry", timing: "11:00 AM - 12:00 PM", venue: "Room : G3", faculty: "Prof. Monika" },
       { name: "TUTE : Thermodynamics", timing: "12:00 PM - 1:00 PM", venue: "Room : TS6", faculty: "Prof. Neakanshika" },
       { name: "TUTE : Probability & Statistics ", timing: "2:00 PM - 3:00 PM", venue: "Room : TS13", faculty: "Prof. Ayush" },
@@ -68,8 +68,9 @@ const SCHEDULE: DaySchedule[] = [
    {
     day: "Saturday",
     classes: [
-      { name: "Thermodynamica", timing: "10:00 AM - 11:00 AM", venue: "Room : G3", faculty: "Prof. Neakanshika" },
-      { name: "Biochemistry", timing: "11:00 AM - 12:00 PM", venue: "Room : G3", faculty: "Prof. Monika" },
+        { name: "Genetics & Dev Bio", timing: "9:00 AM - 10:00 AM", venue: "Room : CS8", faculty: "Prof. Pooja" },
+      { name: "Thermodynamics", timing: "10:00 AM - 11:00 AM", venue: "Room : FF3", faculty: "Prof. Neakanshika" },
+      
     ],
   },
 ];
