@@ -32,7 +32,7 @@ const App = () => (
             fontFamily: "'Poppins', sans-serif",
             fontSize: "0.9rem"
           }}>
-            🐳💜S🧿💻G🍀👩🏽‍💻🌼
+            🐳💜🧿🍀👩🏽‍💻🌼
           </footer>
         </div>
       </BrowserRouter>
