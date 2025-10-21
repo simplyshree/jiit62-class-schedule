@@ -21,7 +21,7 @@ const SCHEDULE: DaySchedule[] = [
     day: "Monday",
     classes: [
       { name: "Thermodynamics", timing: "9:00 AM - 10:00 AM", venue: "Room : CR526", faculty: "Prof. Neakanshika" },
-      { name: "Biochemistry", timing: "11:00 AM - 12:00 AM", venue: "Room : G3", faculty: "Prof. Monika" },
+      { name: "Biochemistry", timing: "11:00 AM - 12:00 PM", venue: "Room : G3", faculty: "Prof. Monika" },
       { name: "TUTE - Biochemistry", timing: "12:00 PM - 1:00 PM", venue: "Room : TS 8", faculty: "Prof. Monika" },
       { name: "GDB LAB", timing: "2:00 PM - 4:00 PM", venue: "Lab : BT 2", faculty: "Prof. Sujata" },
     ],
@@ -31,7 +31,7 @@ const SCHEDULE: DaySchedule[] = [
     classes: [
       { name: "Genetics & Dev Bio", timing: "10:00 AM - 11:00 AM", venue: "Room : CS2", faculty: "Prof. Pooja" },
       { name: "Biochemistry", timing: "11:00 AM - 12:00 PM", venue: "Room : CS2", faculty: "Prof. Monika" },
-      { name: "Environmental Science", timing: "12:00 AM - 1:00 PM", venue: "Room : FF2", faculty: "Prof. Nivedita" },
+      { name: "Environmental Science", timing: "12:00 PM - 1:00 PM", venue: "Room : FF2", faculty: "Prof. Nivedita" },
       { name: "Biochemical Techniques Lab", timing: "2:00 PM - 4:00 PM", venue: "BCL", faculty: "Prof. Monika" },
       { name: "Probability & Statistics", timing: "4:00 PM - 5:00 PM", venue: "G6", faculty: "Prof. Ayush Tripathi" },
     ],
