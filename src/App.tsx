@@ -32,7 +32,7 @@ const App = () => (
             fontFamily: "'Poppins', sans-serif",
             fontSize: "0.9rem"
           }}>
-            Made with 💜 by SG
+            🐳💜S🧿💻G🍀👩🏽‍💻🌼
           </footer>
         </div>
       </BrowserRouter>
