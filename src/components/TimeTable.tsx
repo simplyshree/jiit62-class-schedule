@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Calendar, Clock, MapPin, User } from "lucide-react";
 import { Card } from "./ui/card";
 import { Badge } from "./ui/badge";
-import catLogo from "@/assets/cat-logo.jpg";
+import catLogo from "@/assets/cat-logo.gif";
 
 interface ClassInfo {
   name: string;
