@@ -85,11 +85,11 @@ return (
     <div className="min-h-screen bg-background p-6 md:p-8">
       <div className="max-w-7xl mx-auto space-y-8">
         {/* Cat Logo */}
-        <div className="flex justify-center animate-fade-in">
+        <div className="w-full animate-fade-in">
           <img 
             src={catLogo} 
             alt="Cat Logo" 
-            className="w-24 h-24 md:w-40 md:h-40 object-contain hover:scale-110 transition-transform duration-300"
+            className="w-full h-32 md:h-48 object-cover hover:scale-105 transition-transform duration-300"
           />
         </div>
 
