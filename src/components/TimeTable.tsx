@@ -3,7 +3,7 @@ import { Calendar, Clock, MapPin, User } from "lucide-react";
 import { Card } from "./ui/card";
 import { Badge } from "./ui/badge";
 import { ThemeToggle } from "./ThemeToggle";
-import { PositiveBubbles } from "./PositiveBubbles";
+import { HeartAnimation } from "./HeartAnimation";
 import catLogo from "@/assets/cat-logo.gif";
 
 interface ClassInfo {
@@ -85,7 +85,7 @@ export const TimeTable = () => {
 
 return (
     <div className="min-h-screen bg-background p-6 md:p-8 relative">
-      <PositiveBubbles />
+      <HeartAnimation />
       <div className="max-w-7xl mx-auto space-y-8">
         {/* Cat Logo */}
         <div className="w-full animate-fade-in">
