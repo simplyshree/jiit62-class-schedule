@@ -8,42 +8,42 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    --background: 0 0% 0%;
-    --foreground: 45 30% 95%;
+    --background: 0 0% 100%;
+    --foreground: 0 0% 10%;
 
-    --card: 25 15% 12%;
-    --card-foreground: 45 30% 95%;
+    --card: 0 0% 98%;
+    --card-foreground: 0 0% 10%;
 
-    --popover: 25 15% 12%;
-    --popover-foreground: 45 30% 95%;
+    --popover: 0 0% 98%;
+    --popover-foreground: 0 0% 10%;
 
-    --primary: 95 50% 60%;
+    --primary: 95 50% 50%;
     --primary-foreground: 0 0% 100%;
     
-    --primary-glow: 95 55% 70%;
+    --primary-glow: 95 55% 60%;
     
-    --secondary: 200 40% 70%;
+    --secondary: 200 40% 60%;
     --secondary-foreground: 0 0% 100%;
 
-    --muted: 25 10% 20%;
-    --muted-foreground: 45 20% 65%;
+    --muted: 0 0% 95%;
+    --muted-foreground: 0 0% 40%;
 
-    --accent: 25 75% 70%;
+    --accent: 25 75% 60%;
     --accent-foreground: 0 0% 100%;
 
-    --destructive: 0 65% 65%;
+    --destructive: 0 65% 55%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 45 20% 25%;
-    --input: 25 15% 18%;
-    --ring: 95 50% 60%;
+    --border: 0 0% 90%;
+    --input: 0 0% 95%;
+    --ring: 95 50% 50%;
 
     --radius: 1rem;
     
-    /* Ghibli gradients - adjusted for dark background */
+    /* Gradients for light mode */
     --gradient-primary: linear-gradient(135deg, hsl(95 50% 50%), hsl(95 55% 60%));
     --gradient-secondary: linear-gradient(135deg, hsl(200 40% 60%), hsl(180 35% 65%));
-    --gradient-card: linear-gradient(135deg, hsl(25 15% 12% / 0.95), hsl(25 12% 15% / 0.98));
+    --gradient-card: linear-gradient(135deg, hsl(0 0% 98% / 0.95), hsl(0 0% 96% / 0.98));
     
     /* Soft glow effects */
     --glow-primary: 0 4px 12px hsl(95 45% 55% / 0.2);
@@ -70,20 +70,37 @@ All colors MUST be HSL.
   }
 
   .dark {
-    --background: 25 20% 15%;
-    --foreground: 45 30% 95%;
+    --background: 0 0% 0%;
+    --foreground: 0 0% 95%;
     
-    --card: 25 18% 18%;
-    --card-foreground: 45 30% 95%;
+    --card: 0 0% 10%;
+    --card-foreground: 0 0% 95%;
 
-    --primary: 95 40% 50%;
+    --popover: 0 0% 10%;
+    --popover-foreground: 0 0% 95%;
+
+    --primary: 95 50% 60%;
     --primary-foreground: 0 0% 100%;
     
-    --muted: 25 15% 25%;
-    --muted-foreground: 45 20% 70%;
+    --primary-glow: 95 55% 70%;
+    
+    --secondary: 200 40% 70%;
+    --secondary-foreground: 0 0% 100%;
+    
+    --muted: 0 0% 15%;
+    --muted-foreground: 0 0% 65%;
 
-    --border: 25 15% 25%;
-    --input: 25 15% 22%;
+    --accent: 25 75% 70%;
+    --accent-foreground: 0 0% 100%;
+
+    --border: 0 0% 20%;
+    --input: 0 0% 15%;
+    --ring: 95 50% 60%;
+    
+    /* Gradients for dark mode */
+    --gradient-primary: linear-gradient(135deg, hsl(95 50% 50%), hsl(95 55% 60%));
+    --gradient-secondary: linear-gradient(135deg, hsl(200 40% 60%), hsl(180 35% 65%));
+    --gradient-card: linear-gradient(135deg, hsl(0 0% 10% / 0.95), hsl(0 0% 12% / 0.98));
   }
 }
 
