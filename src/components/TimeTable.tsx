@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Calendar, Clock, MapPin, User } from "lucide-react";
 import { Card } from "./ui/card";
 import { Badge } from "./ui/badge";
+import { ThemeToggle } from "./ThemeToggle";
 import catLogo from "@/assets/cat-logo.gif";
 
 interface ClassInfo {
@@ -93,6 +94,10 @@ return (
           />
         </div>
 
+        {/* Theme Toggle */}
+        <div className="flex justify-center animate-fade-in">
+          <ThemeToggle />
+        </div>
 
         {/* Header */}
         <div className="text-center space-y-3 md:space-y-4 animate-fade-in">
