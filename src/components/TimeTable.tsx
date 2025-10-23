@@ -1,5 +1,5 @@
-import { useState } from "react";
-import { Calendar, Clock, MapPin, User } from "lucide-react";
+import { useState, useRef } from "react";
+import { Calendar, Clock, MapPin, User, ChevronLeft, ChevronRight } from "lucide-react";
 import { Card } from "./ui/card";
 import { Badge } from "./ui/badge";
 import { ThemeToggle } from "./ThemeToggle";
@@ -77,11 +77,47 @@ const SCHEDULE: DaySchedule[] = [
   },
 ];
 
+const BATCHES = ["C1", "C2", "C3"];
+
 export const TimeTable = () => {
   const today = new Date().toLocaleDateString("en-US", { weekday: "long" });
   const [selectedDay, setSelectedDay] = useState(today);
+  const [selectedBatch, setSelectedBatch] = useState("C1");
+  const touchStartX = useRef<number>(0);
+  const touchEndX = useRef<number>(0);
   
   const selectedDaySchedule = SCHEDULE.find((schedule) => schedule.day === selectedDay);
+
+  const handlePreviousDay = () => {
+    const currentIndex = SCHEDULE.findIndex((schedule) => schedule.day === selectedDay);
+    const previousIndex = currentIndex > 0 ? currentIndex - 1 : SCHEDULE.length - 1;
+    setSelectedDay(SCHEDULE[previousIndex].day);
+  };
+
+  const handleNextDay = () => {
+    const currentIndex = SCHEDULE.findIndex((schedule) => schedule.day === selectedDay);
+    const nextIndex = currentIndex < SCHEDULE.length - 1 ? currentIndex + 1 : 0;
+    setSelectedDay(SCHEDULE[nextIndex].day);
+  };
+
+  const handleTouchStart = (e: React.TouchEvent) => {
+    touchStartX.current = e.touches[0].clientX;
+  };
+
+  const handleTouchMove = (e: React.TouchEvent) => {
+    touchEndX.current = e.touches[0].clientX;
+  };
+
+  const handleTouchEnd = () => {
+    if (touchStartX.current - touchEndX.current > 50) {
+      // Swipe left - next day
+      handleNextDay();
+    }
+    if (touchEndX.current - touchStartX.current > 50) {
+      // Swipe right - previous day
+      handlePreviousDay();
+    }
+  };
 
 return (
     <div className="min-h-screen bg-background p-6 md:p-8 relative">
@@ -113,31 +149,83 @@ return (
             My Class Schedule
           </h1>
           <p className="text-muted-foreground text-base md:text-lg px-4">
-            Select a day to view your classes
+            Select batch and day to view your classes
           </p>
         </div>
 
-        {/* Days Selection at Top */}
+        {/* Batch Selection */}
+        <div className="space-y-3 md:space-y-4 animate-fade-in">
+          <h2 className="text-lg md:text-xl font-semibold text-center text-foreground">
+            Select Batch
+          </h2>
+          <div className="flex justify-center gap-3 md:gap-4 px-2">
+            {BATCHES.map((batch) => (
+              <Badge
+                key={batch}
+                variant={batch === selectedBatch ? "default" : "outline"}
+                onClick={() => setSelectedBatch(batch)}
+                className={`px-6 md:px-8 py-2.5 md:py-3 text-base md:text-lg cursor-pointer transition-all duration-300 ${
+                  batch === selectedBatch
+                    ? "bg-gradient-primary shadow-glow-primary border-0 scale-110"
+                    : "hover:border-primary/50 hover:bg-primary/10 hover:scale-105"
+                }`}
+              >
+                {batch}
+              </Badge>
+            ))}
+          </div>
+        </div>
+
+        {/* Days Selection with Arrows */}
         <div className="space-y-3 md:space-y-4">
           <h2 className="text-lg md:text-xl font-semibold text-center text-foreground">
             Select Day
           </h2>
-          <div className="flex flex-wrap justify-center gap-2 md:gap-3 px-2">
-            {SCHEDULE.map((schedule) => (
-              <Badge
-                key={schedule.day}
-                variant={schedule.day === selectedDay ? "default" : "outline"}
-                onClick={() => setSelectedDay(schedule.day)}
-                className={`px-4 md:px-6 py-2 md:py-3 text-sm md:text-base cursor-pointer transition-all duration-300 ${
-                  schedule.day === selectedDay
-                    ? "bg-gradient-primary shadow-glow-primary border-0 scale-105"
-                    : "hover:border-primary/50 hover:bg-primary/10 hover:scale-105"
-                }`}
-              >
-                {schedule.day}
-              </Badge>
-            ))}
+          <div className="flex items-center justify-center gap-2 md:gap-4 px-2">
+            {/* Left Arrow */}
+            <button
+              onClick={handlePreviousDay}
+              className="p-2 rounded-full bg-primary/10 hover:bg-primary/20 text-primary transition-all duration-300 hover:scale-110"
+              aria-label="Previous day"
+            >
+              <ChevronLeft className="w-5 h-5 md:w-6 md:h-6" />
+            </button>
+
+            {/* Days */}
+            <div 
+              className="flex flex-wrap justify-center gap-2 md:gap-3"
+              onTouchStart={handleTouchStart}
+              onTouchMove={handleTouchMove}
+              onTouchEnd={handleTouchEnd}
+            >
+              {SCHEDULE.map((schedule) => (
+                <Badge
+                  key={schedule.day}
+                  variant={schedule.day === selectedDay ? "default" : "outline"}
+                  onClick={() => setSelectedDay(schedule.day)}
+                  className={`px-4 md:px-6 py-2 md:py-3 text-sm md:text-base cursor-pointer transition-all duration-300 ${
+                    schedule.day === selectedDay
+                      ? "bg-gradient-primary shadow-glow-primary border-0 scale-105"
+                      : "hover:border-primary/50 hover:bg-primary/10 hover:scale-105"
+                  }`}
+                >
+                  {schedule.day}
+                </Badge>
+              ))}
+            </div>
+
+            {/* Right Arrow */}
+            <button
+              onClick={handleNextDay}
+              className="p-2 rounded-full bg-primary/10 hover:bg-primary/20 text-primary transition-all duration-300 hover:scale-110"
+              aria-label="Next day"
+            >
+              <ChevronRight className="w-5 h-5 md:w-6 md:h-6" />
+            </button>
           </div>
+          <p className="text-center text-xs md:text-sm text-muted-foreground">
+            👆 Click arrows or swipe to change days
+          </p>
         </div>
 
         {/* Classes - Vertical on Mobile, Horizontal on Desktop */}
