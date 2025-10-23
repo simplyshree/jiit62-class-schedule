@@ -192,12 +192,7 @@ return (
             </button>
 
             {/* Days */}
-            <div 
-              className="flex flex-wrap justify-center gap-2 md:gap-3"
-              onTouchStart={handleTouchStart}
-              onTouchMove={handleTouchMove}
-              onTouchEnd={handleTouchEnd}
-            >
+            <div className="flex flex-wrap justify-center gap-2 md:gap-3">
               {SCHEDULE.map((schedule) => (
                 <Badge
                   key={schedule.day}
@@ -223,14 +218,16 @@ return (
               <ChevronRight className="w-5 h-5 md:w-6 md:h-6" />
             </button>
           </div>
-          <p className="text-center text-xs md:text-sm text-muted-foreground">
-            👆 Click arrows or swipe to change days
-          </p>
         </div>
 
         {/* Classes - Vertical on Mobile, Horizontal on Desktop */}
         {selectedDaySchedule ? (
-          <div className="relative">
+          <div 
+            className="relative"
+            onTouchStart={handleTouchStart}
+            onTouchMove={handleTouchMove}
+            onTouchEnd={handleTouchEnd}
+          >
             {/* Mobile: Vertical Stack */}
             <div className="md:hidden space-y-4">
               {selectedDaySchedule.classes.map((classInfo, index) => (

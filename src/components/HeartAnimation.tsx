@@ -41,7 +41,7 @@ export const HeartAnimation = () => {
     <>
       {showHeart && (
         <div
-          className="fixed bottom-0 pointer-events-auto z-50 cursor-pointer animate-float-up"
+          className="fixed bottom-0 pointer-events-auto z-50 cursor-pointer animate-float-up flex flex-col items-center"
           style={{
             left: `${position.left}%`,
             animationDuration: "8s",
@@ -49,6 +49,9 @@ export const HeartAnimation = () => {
           onClick={handleHeartClick}
         >
           <Heart className="w-16 h-16 fill-purple-500 text-purple-500 drop-shadow-lg hover:scale-110 transition-transform" />
+          <div className="mt-2 bg-purple-500 text-white text-xs font-bold px-3 py-1 rounded-full shadow-lg">
+            Pop me!
+          </div>
         </div>
       )}
 
