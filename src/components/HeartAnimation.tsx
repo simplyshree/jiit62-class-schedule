@@ -44,7 +44,7 @@ export const HeartAnimation = () => {
           className="fixed bottom-0 pointer-events-auto z-50 cursor-pointer animate-float-up flex flex-col items-center"
           style={{
             left: `${position.left}%`,
-            animationDuration: "8s",
+            animationDuration: "15s",
           }}
           onClick={handleHeartClick}
         >
