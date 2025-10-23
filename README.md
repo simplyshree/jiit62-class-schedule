@@ -1,6 +1,6 @@
 # 🧭 JIIT 62 Timetable
 
-🚀 **Live Demo:** [https://c1-class-schedule.vercel.app/](https://c1-class-schedule.vercel.app/)
+🚀 **Live Demo:** [https://bt-class-schedule.vercel.app/](https://bt-class-schedule.vercel.app/)
 
 A web app that displays your daily class schedule with a clean and modern UI.  
 Built with **React + TypeScript + Vite**, and deployed on **Vercel**.
