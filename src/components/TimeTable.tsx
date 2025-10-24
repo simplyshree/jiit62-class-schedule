@@ -82,8 +82,8 @@ const SCHEDULES: Record<string, DaySchedule[]> = {
       classes: [
         { name: "Thermodynamics", timing: "9:00 AM - 10:00 AM", venue: "Room : CR526", faculty: "Prof. Neakanshika" },
         { name: "Biochemistry", timing: "11:00 AM - 12:00 PM", venue: "Room : G3", faculty: "Prof. Monika" },
-        { name: "TUTE - Biochemistry", timing: "12:00 PM - 1:00 PM", venue: "Room : TS 8", faculty: "Prof. Monika" },
-        { name: "GDB LAB", timing: "2:00 PM - 4:00 PM", venue: "Lab : BT 2", faculty: "Prof. Sujata" },
+        { name: "TUTE - Genetics and Dev Bio", timing: "12:00 PM - 1:00 PM", venue: "Room : TS 8", faculty: "Prof. Monika" },
+        { name: "Thermodynamics & Chemical Processes Lab", timing: "2:00 PM - 4:00 PM", venue: "Lab : BT1", faculty: "Prof. Shweta , Prof. Ekta , Prof . Neakanshika" },
       ],
     },
     {
@@ -99,10 +99,11 @@ const SCHEDULES: Record<string, DaySchedule[]> = {
     {
       day: "Wednesday",
       classes: [
+        { name: "TUTE : Thermodynamics", timing: "9:00 AM - 10:00 AM", venue: "Room : TS6", faculty: "Prof. Neakanshika" },
         { name: "Thermodynamics", timing: "10:00 AM - 11:00 AM", venue: "Room : G3", faculty: "Prof. Neakanshika" },
         { name: "Biochemistry", timing: "11:00 AM - 12:00 PM", venue: "Room : G3", faculty: "Prof. Monika" },
-        { name: "TUTE : Thermodynamics", timing: "12:00 PM - 1:00 PM", venue: "Room : TS6", faculty: "Prof. Neakanshika" },
-        { name: "TUTE : Probability & Statistics ", timing: "2:00 PM - 3:00 PM", venue: "Room : TS13", faculty: "Prof. Ayush" },
+        { name: "TUTE : Biochemistry", timing: "12:00 PM - 1:00 PM", venue: "Room : TS6", faculty: "Prof. Monika" },
+        { name: "TUTE : Economics ", timing: "2:00 PM - 3:00 PM", venue: "Room : TS13", faculty: "Prof. Kanupriya" },
         { name: "Probability & Statistics ", timing: "3:00 PM - 4:00 PM", venue: "Room : G3", faculty: "Prof. Ayush" },
         { name: "ECONOMICS ", timing: "4:00 PM - 5:00 PM", venue: "Room : FF2", faculty: "Prof. Kanupriya" },
       ],
