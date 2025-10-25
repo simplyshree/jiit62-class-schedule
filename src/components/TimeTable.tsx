@@ -139,9 +139,10 @@ const SCHEDULES: Record<string, DaySchedule[]> = {
       day: "Monday",
       classes: [
         { name: "Thermodynamics", timing: "9:00 AM - 10:00 AM", venue: "Room : CR526", faculty: "Prof. Neakanshika" },
+        { name: "Environmental Science", timing: "10:00 AM - 11:00 PM", venue: "Room : G3", faculty: "Prof. Nivedita" },
         { name: "Biochemistry", timing: "11:00 AM - 12:00 PM", venue: "Room : G3", faculty: "Prof. Monika" },
-        { name: "TUTE - Biochemistry", timing: "12:00 PM - 1:00 PM", venue: "Room : TS 8", faculty: "Prof. Monika" },
-        { name: "GDB LAB", timing: "2:00 PM - 4:00 PM", venue: "Lab : BT 2", faculty: "Prof. Sujata" },
+        { name: "TUTE - Thermodynamics", timing: "12:00 PM - 1:00 PM", venue: "Room : TS 6", faculty: "Prof.  Neakanshika" },
+        { name: "Biochemical Techniques LAB", timing: "2:00 PM - 4:00 PM", venue: "Lab : BCL", faculty: "Prof. Monika" },
       ],
     },
     {
@@ -150,17 +151,17 @@ const SCHEDULES: Record<string, DaySchedule[]> = {
        { name: "Genetics & Dev Bio", timing: "10:00 AM - 11:00 AM", venue: "Room : CS2", faculty: "Prof. Pooja" },
         { name: "Biochemistry", timing: "11:00 AM - 12:00 PM", venue: "Room : CS2", faculty: "Prof. Monika" },
         { name: "Environmental Science", timing: "12:00 PM - 1:00 PM", venue: "Room : FF2", faculty: "Prof. Nivedita" },
-        { name: "Biochemical Techniques Lab", timing: "2:00 PM - 4:00 PM", venue: "BCL", faculty: "Prof. Monika" },
+        { name: "Thermodynamics & Chemical Processes Lab", timing: "2:00 PM - 4:00 PM", venue: "Lab : BT1", faculty: "Prof. Shweta , Prof. Ekta , Prof . Neakanshika" },
         { name: "Probability & Statistics", timing: "4:00 PM - 5:00 PM", venue: "G6", faculty: "Prof. Ayush Tripathi" },
       ],
     },
     {
       day: "Wednesday",
       classes: [
+        { name: "TUTE : Probability & Statistics ", timing: "9:00 AM - 10:00 AM", venue: "Room : TS12", faculty: "Prof. Ayush" },
         { name: "Thermodynamics", timing: "10:00 AM - 11:00 AM", venue: "Room : G3", faculty: "Prof. Neakanshika" },
         { name: "Biochemistry", timing: "11:00 AM - 12:00 PM", venue: "Room : G3", faculty: "Prof. Monika" },
-        { name: "TUTE : Thermodynamics", timing: "12:00 PM - 1:00 PM", venue: "Room : TS6", faculty: "Prof. Neakanshika" },
-        { name: "TUTE : Probability & Statistics ", timing: "2:00 PM - 3:00 PM", venue: "Room : TS13", faculty: "Prof. Ayush" },
+        { name: "TUTE : Genetics & Dev Bio", timing: "12:00 PM - 1:00 PM", venue: "Room : TS7", faculty: "Prof. Pooja" },
         { name: "Probability & Statistics ", timing: "3:00 PM - 4:00 PM", venue: "Room : G3", faculty: "Prof. Ayush" },
         { name: "ECONOMICS ", timing: "4:00 PM - 5:00 PM", venue: "Room : FF2", faculty: "Prof. Kanupriya" },
       ],
@@ -168,19 +169,20 @@ const SCHEDULES: Record<string, DaySchedule[]> = {
     {
       day: "Thursday",
       classes: [
-        { name: "Thermodynamics & Chemical Processes Lab", timing: "9:00 AM - 11:00 AM", venue: "Lab : BT1", faculty: "Prof. Shweta , Prof. Ekta , Prof . Neakanshika" },
+        { name: "Genetics and Dev Bio Lab", timing: "9:00 AM - 11:00 AM", venue: "Lab : BT2", faculty: "Prof. Sujata" },
+        { name: "EVS", timing: "11:00 AM - 12:00 PM", venue: "Room : G1", faculty: "Prof. NIVEDITA" },
         { name: "Genetics & Dev Bio", timing: "12:00 PM - 1:00 PM", venue: "Room : G7", faculty: "Prof. Pooja" },
-        { name: "TUTE: Genetics & Dev Bio", timing: "2:00 PM - 3:00 PM", venue: "Room : TS11", faculty: "Prof. Pooja" },
-        { name: "EVS", timing: "3:00 PM - 4:00 PM", venue: "Room : G3", faculty: "Prof. NIVEDITA" },
+        { name: "TUTE: Biochemistry", timing: "2:00 PM - 3:00 PM", venue: "Room : TS12", faculty: "Prof. Monika" },
+        
       ],
     },
     {
       day: "Friday",
       classes: [
-         { name: "EVS", timing: "9:00 AM - 10:00 AM", venue: "Room : FF4", faculty: "Prof. NIVEDITA" },
         { name: "ECONOMICS ", timing: "10:00 AM - 11:00 AM", venue: "Room : F8", faculty: "Prof. Kanupriya" },
         { name: "Probability & Statistics ", timing: "11:00 PM - 12:00 PM", venue: "Room : F8", faculty: "Prof. Ayush" },
-        { name: "TUTE : ECONOMICS ", timing: "12:00 AM - 1:00 AM", venue: "Room : TS12", faculty: "Prof. Neha Singh" },
+        { name: "EVS", timing: "12:00 PM - 1:00 PM", venue: "Room : FF4", faculty: "Prof. NIVEDITA" },
+        { name: "TUTE : ECONOMICS ", timing: "3:00 PM - 4:00 PM", venue: "Room : TS16", faculty: "Prof. Kanupriya" },
       ],
     },
     {
