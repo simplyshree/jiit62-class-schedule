@@ -181,7 +181,7 @@ const SCHEDULES: Record<string, DaySchedule[]> = {
       classes: [
         { name: "ECONOMICS ", timing: "10:00 AM - 11:00 AM", venue: "Room : F8", faculty: "Prof. Kanupriya" },
         { name: "Probability & Statistics ", timing: "11:00 PM - 12:00 PM", venue: "Room : F8", faculty: "Prof. Ayush" },
-        { name: "EVS", timing: "12:00 PM - 1:00 PM", venue: "Room : FF4", faculty: "Prof. NIVEDITA" },
+        { name: "EVS", timing: "12:00 PM - 1:00 PM", venue: "Room : FF2", faculty: "Prof. NIVEDITA" },
         { name: "TUTE : ECONOMICS ", timing: "3:00 PM - 4:00 PM", venue: "Room : TS16", faculty: "Prof. Kanupriya" },
       ],
     },
