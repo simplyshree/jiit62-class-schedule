@@ -5,6 +5,9 @@
 A web app that displays your daily class schedule with a clean and modern UI.  
 Built with **React + TypeScript + Vite**, and deployed on **Vercel**.
 
+This project was originally scaffolded with Lovable and later edited by me.
+
+
 ---
 
 ## ✨ Features
@@ -41,4 +44,3 @@ Built with **React + TypeScript + Vite**, and deployed on **Vercel**.
 
 
 
-This project was originally scaffolded with Lovable and later edited by me.
